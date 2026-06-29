@@ -122,21 +122,22 @@
       padding-top: 1.9rem;
       border-top: 1px solid var(--rule);
     }
+    .featured .ftitle {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      transition: border-color .15s ease, color .15s ease;
+    }
     .featured-link {
-      display: flex;
+      display: inline-flex;
       align-items: baseline;
       gap: .5rem;
       text-decoration: none;
       color: var(--fg);
       width: fit-content;
-    }
-    .featured-link .ftitle {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 1.2;
-      border-bottom: 1px solid transparent;
-      transition: border-color .15s ease, color .15s ease;
     }
     .featured-link .arrow {
       color: var(--muted);
@@ -255,18 +256,21 @@
 
     <section class="featured">
       <p class="label">Featured</p>
-      <a class="featured-link" href="https://learn.veylan.dev">
-        <span class="ftitle">AI Safety Research Compiler</span>
-        <span class="arrow">→</span>
-      </a>
-      <p class="featured-desc">An interactive curriculum for AI safety research.</p>
+      <!-- No link yet. To make it clickable, swap the <span class="ftitle"> for:
+           <a class="featured-link" href="https://…"><span class="ftitle">…</span><span class="arrow">→</span></a> -->
+      <span class="ftitle">FIG Extension Fellowship</span>
+      <p class="featured-desc">Studying persona dynamics in frontier models.</p>
     </section>
 
     <section class="projects">
       <p class="label">Projects</p>
       <ul class="project-list">
-        <!-- Placeholders awaiting hosting. To make one live, wrap the title text in
+        <!-- To make a placeholder live, wrap its title in
              <a class="project-link" href="https://…">Title</a> and delete its "soon" tag. -->
+        <li class="project">
+          <a class="project-link" href="https://learn.veylan.dev"><span class="ptitle">AI Safety Research Compiler</span></a>
+          <span class="pdesc">An interactive curriculum for AI safety research.</span>
+        </li>
         <li class="project">
           <span class="ptitle">Earth Explorer</span><span class="ptag">soon</span>
           <span class="pdesc">Interactive travel + trip-planning map.</span>
