@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veylan Solmira</title>
+  <meta name="description" content="Veylan Solmira — AI safety researcher. Research, writing, and projects." />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Veylan Solmira" />
+  <meta property="og:description" content="AI safety researcher. Research, writing, and projects." />
+  <meta property="og:url" content="https://veylan.dev/" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🜍</text></svg>" />
+
+  <style>
+    :root {
+      --bg: #fbfbf9;
+      --fg: #1a1a1a;
+      --muted: #6b6b6b;
+      --card: #ffffff;
+      --border: #e6e4df;
+      --accent: #2b5fae;
+      --accent-soft: #eaf0fa;
+      --radius: 14px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --fg: #ececec;
+        --muted: #9aa0aa;
+        --card: #171a21;
+        --border: #262b34;
+        --accent: #6fa1f0;
+        --accent-soft: #1b2533;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: clamp(3rem, 8vh, 6rem) 1.25rem 4rem;
+    }
+
+    header { margin-bottom: 2.5rem; }
+    .name {
+      font-size: clamp(1.9rem, 6vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 .35rem;
+    }
+    .tagline {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    .bio {
+      margin: 1.4rem 0 0;
+      color: var(--fg);
+      font-size: 1.02rem;
+    }
+    .bio a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+    .bio a:hover { border-bottom-color: var(--accent); }
+
+    h2.section {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--muted);
+      font-weight: 600;
+      margin: 2.6rem 0 1rem;
+    }
+
+    .links {
+      display: grid;
+      gap: .75rem;
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      gap: .9rem;
+      padding: .95rem 1.1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: var(--fg);
+      transition: border-color .15s ease, transform .15s ease, background .15s ease;
+    }
+    .link:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .link .icon {
+      flex: 0 0 auto;
+      width: 2.1rem;
+      height: 2.1rem;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      background: var(--accent-soft);
+      font-size: 1.05rem;
+    }
+    .link .meta { min-width: 0; }
+    .link .label { font-weight: 600; display: block; }
+    .link .sub { font-size: .85rem; color: var(--muted); display: block; }
+    .link .arrow { margin-left: auto; color: var(--muted); transition: transform .15s ease; }
+    .link:hover .arrow { transform: translateX(3px); color: var(--accent); }
+
+    .featured { border-color: var(--accent); background: var(--accent-soft); }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1 class="name">Veylan Solmira</h1>
+      <p class="tagline">AI Safety Researcher</p>
+      <p class="bio">
+        I work on detecting and preventing deceptive behavior in frontier AI
+        systems, scalable oversight, and the moral status of digital minds —
+        currently at <strong>Apollo Research</strong>. This is the front door to
+        my work and the rest of my corner of the internet.
+      </p>
+    </header>
+
+    <h2 class="section">Featured</h2>
+    <div class="links">
+      <a class="link featured" href="https://learn.veylan.dev">
+        <span class="icon">🧭</span>
+        <span class="meta">
+          <span class="label">AI Safety Research Compiler</span>
+          <span class="sub">An interactive curriculum for AI safety research</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <h2 class="section">Find me</h2>
+    <div class="links">
+      <a class="link" href="https://github.com/VeylanSolmira">
+        <span class="icon">💻</span>
+        <span class="meta">
+          <span class="label">GitHub</span>
+          <span class="sub">Code &amp; open-source projects</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="link" href="https://www.linkedin.com/in/veylansolmira/">
+        <span class="icon">in</span>
+        <span class="meta">
+          <span class="label">LinkedIn</span>
+          <span class="sub">Professional background</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="link" href="https://veylansolmira.substack.com/">
+        <span class="icon">✍️</span>
+        <span class="meta">
+          <span class="label">Substack</span>
+          <span class="sub">Essays &amp; writing</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="link" href="https://letterboxd.com/veylansolmira/">
+        <span class="icon">🎬</span>
+        <span class="meta">
+          <span class="label">Letterboxd</span>
+          <span class="sub">Films I'm watching</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="link" href="mailto:veylan.solmira@gmail.com">
+        <span class="icon">✉️</span>
+        <span class="meta">
+          <span class="label">Email</span>
+          <span class="sub">veylan.solmira@gmail.com</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <footer>
+      © <span id="year">2026</span> Veylan Solmira
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
