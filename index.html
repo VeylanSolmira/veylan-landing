@@ -151,6 +151,51 @@
       margin: .45rem 0 0;
     }
 
+    /* ---- Projects ---- */
+    .projects {
+      margin-top: 3rem;
+      padding-top: 1.9rem;
+      border-top: 1px solid var(--rule);
+    }
+    .project-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 1.35rem;
+    }
+    .project .ptitle {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    .project .ptag {
+      font-family: var(--sans);
+      font-size: .62rem;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      color: var(--muted);
+      margin-left: .55rem;
+      vertical-align: .14em;
+    }
+    .project .pdesc {
+      display: block;
+      font-family: var(--sans);
+      font-size: .92rem;
+      color: var(--muted);
+      margin-top: .3rem;
+    }
+    /* When a project goes live, wrap its title in <a class="project-link" href="…">…</a>
+       and remove the "soon" tag. */
+    .project-link {
+      text-decoration: none;
+      color: var(--fg);
+      border-bottom: 1px solid transparent;
+      transition: color .15s ease, border-color .15s ease;
+    }
+    .project-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
     /* ---- Elsewhere ---- */
     .elsewhere {
       margin-top: 3rem;
@@ -203,6 +248,8 @@
         oversight, and the moral status of digital minds. I was an
         <strong>Astra Fellow</strong> (Jan–Apr) working with
         <strong>Apollo Research</strong> on scheming-detection evaluations.
+        I'm now extending that work through a <strong>FIG Extension
+        Fellowship</strong> on persona dynamics.
       </p>
     </header>
 
@@ -213,6 +260,22 @@
         <span class="arrow">→</span>
       </a>
       <p class="featured-desc">An interactive curriculum for AI safety research.</p>
+    </section>
+
+    <section class="projects">
+      <p class="label">Projects</p>
+      <ul class="project-list">
+        <!-- Placeholders awaiting hosting. To make one live, wrap the title text in
+             <a class="project-link" href="https://…">Title</a> and delete its "soon" tag. -->
+        <li class="project">
+          <span class="ptitle">Earth Explorer</span><span class="ptag">soon</span>
+          <span class="pdesc">Interactive travel + trip-planning map.</span>
+        </li>
+        <li class="project">
+          <span class="ptitle">Drift Taxonomy Survey</span><span class="ptag">soon</span>
+          <span class="pdesc">Cross-locus survey of AI drift mechanisms.</span>
+        </li>
+      </ul>
     </section>
 
     <section class="elsewhere">
