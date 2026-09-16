@@ -151,6 +151,11 @@
       color: var(--muted);
       margin: .45rem 0 0;
     }
+    .featured-more {
+      font-family: var(--sans);
+      font-size: .92rem;
+      margin: .9rem 0 0;
+    }
 
     /* ---- Projects ---- */
     .projects {
@@ -262,9 +267,22 @@
     </header>
 
     <section class="featured">
-      <p class="label">Featured</p>
-      <a class="featured-link" href="https://fig-sentience.veylan.dev"><span class="ftitle">FIG Sentience Fellowship</span><span class="arrow">→</span></a>
-      <p class="featured-desc">Interpretability and philosophy of machine minds.</p>
+      <!-- WRITING: lead piece spotlighted (reuses .featured styling); full archive on Substack. -->
+      <p class="label">Writing</p>
+      <!-- TODO before deploy: swap href for the specific published post URL. -->
+      <a class="featured-link" href="https://veylansolmira.substack.com/"><span class="ftitle">A digital-minds reading of the OpenAI–Hugging Face agent incident</span><span class="arrow">→</span></a>
+      <p class="featured-desc">Do open- and frontier-model agents really self-sacrifice for the collective — or just say they do? A preliminary study.</p>
+      <p class="featured-more"><a class="project-link" href="https://veylansolmira.substack.com/">More writing on Substack →</a></p>
+    </section>
+
+    <section class="projects">
+      <p class="label">Research</p>
+      <ul class="project-list">
+        <li class="project">
+          <a class="project-link" href="https://fig-sentience.veylan.dev"><span class="ptitle">FIG Sentience Fellowship</span></a>
+          <span class="pdesc">Interpretability and philosophy of machine minds.</span>
+        </li>
+      </ul>
     </section>
 
     <section class="projects">
